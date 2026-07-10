@@ -1,0 +1,6 @@
+transaction_id,transactional_date,product_id,customer_id,payment,credit_card,loyalty_card,cost,quantity,price,discount
+6001,2022-08-15 10:15:00,P101,101,UPI,Yes,No,120,2,150,10
+6002,2022-08-15 10:20:00,P205,102,Credit Card,Yes,Yes,250,1,320,15
+6003,2022-08-15 10:25:00,P110,103,Debit Card,No,Yes,80,5,100,5
+6004,2022-08-15 10:30:00,P315,104,Cash,No,No,450,1,550,20
+6005,2022-08-15 10:35:00,P122,105,UPI,Yes,Yes,90,3,130,8

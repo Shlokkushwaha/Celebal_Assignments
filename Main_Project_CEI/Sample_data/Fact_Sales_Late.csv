@@ -1,0 +1,6 @@
+transaction_id,transactional_date,product_id,customer_id,payment,credit_card,loyalty_card,cost,quantity,price
+7001,2021-01-10 09:15:00,P401,201,UPI,Yes,No,180,2,240
+7002,2021-02-05 11:30:00,P155,202,Cash,No,Yes,90,4,130
+7003,2021-03-12 15:20:00,P210,203,Debit Card,Yes,No,300,1,420
+7004,2021-04-18 10:05:00,P099,204,Credit Card,Yes,Yes,110,3,160
+7005,2021-05-22 16:45:00,P501,205,UPI,No,Yes,75,5,115
