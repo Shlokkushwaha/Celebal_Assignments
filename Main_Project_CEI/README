@@ -1,0 +1,182 @@
+# 🚀 Project Sentinel
+
+## Enterprise-Grade Incremental Data Ingestion Pipeline using Databricks Auto Loader & Delta Lake
+
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003B57?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge)
+
+---
+
+# 📖 Overview
+
+Project Sentinel is an enterprise-grade incremental data ingestion pipeline built using **Databricks Auto Loader**, **PySpark**, and **Delta Lake** following the **Bronze–Silver–Gold Medallion Architecture**.
+
+The pipeline automatically detects newly arrived transaction files, ingests only new data using checkpointing, cleans and validates the records, and generates business-ready analytical datasets.
+
+The project demonstrates modern Data Engineering concepts including:
+
+- Incremental Data Ingestion
+- Databricks Auto Loader
+- Delta Lake
+- Schema Enforcement
+- Schema Evolution
+- Late Data Handling
+- Structured Streaming
+- Data Cleaning
+- Deduplication
+- Pipeline Monitoring
+- Pipeline Logging
+- Failure Handling
+- SQL Analytics
+
+---
+
+# 🏗 Architecture
+
+![Architecture](architecture/architecture.png)
+
+---
+
+# 🥉 Bronze Layer
+
+Raw data ingestion using Databricks Auto Loader.
+
+Features:
+
+- Auto Loader (cloudFiles)
+- Schema Enforcement
+- Incremental Processing
+- Checkpointing
+- Ingestion Timestamp
+- Delta Table Storage
+
+---
+
+# 🥈 Silver Layer
+
+Data Cleansing & Validation
+
+Features:
+
+- Remove Duplicate Records
+- Handle Null Values
+- Type Casting
+- Standardization
+- Data Quality Checks
+
+---
+
+# 🥇 Gold Layer
+
+Business-ready analytics.
+
+Generated KPIs:
+
+- Top Products
+- Top Customers
+- Payment Distribution
+- Revenue Analysis
+
+---
+
+# ⚙ Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| Databricks | Development Platform |
+| PySpark | Data Processing |
+| Delta Lake | Storage |
+| Auto Loader | Incremental Ingestion |
+| Structured Streaming | Streaming |
+| SQL | Analytics |
+| Python | ETL |
+| Git | Version Control |
+
+---
+
+# 📂 Project Structure
+
+```text
+Main_Project_CEI/
+│
+├── notebooks/
+│   ├── 01_Data_Generation.ipynb
+│   ├── 02_Bronze_AutoLoader.ipynb
+│   ├── 03_Silver_Layer.ipynb
+│   ├── 04_Gold_Layer.ipynb
+│   ├── 05_SQL_Analytics.ipynb
+│   ├── 06_Schema_Evolution_Demo.ipynb
+│   ├── 07_Monitoring.ipynb
+│   ├── 08_Pipeline_Logs.ipynb
+│   └── 09_Failure_Handling.ipynb
+│
+├── sample_data/
+├── screenshots/
+├── architecture/
+│   └── architecture.png
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+# ✨ Key Features
+
+- Incremental Data Ingestion
+- Databricks Auto Loader
+- Delta Lake
+- Medallion Architecture
+- Schema Enforcement
+- Schema Evolution
+- Late Data Handling
+- ACID Transactions
+- Monitoring
+- Pipeline Logging
+- Failure Handling
+- SQL Analytics
+
+---
+
+# 📊 SQL Analytics
+
+The Gold layer generates business-ready datasets including:
+
+- Revenue Analysis
+- Top Customers
+- Top Products
+- Payment Distribution
+
+---
+
+# 📷 Screenshots
+
+Screenshots demonstrating each stage of the pipeline are available inside the **screenshots/** folder.
+
+---
+
+# 🚀 Future Improvements
+
+- Azure Data Factory Integration
+- Azure Data Lake Storage Gen2
+- Unity Catalog
+- Power BI Dashboard
+- CI/CD Pipeline
+- Delta Live Tables
+
+---
+
+# 👨‍💻 Author
+
+**Shlok Kushwaha**
+
+B.Tech Computer Science Engineering
+
+Data Engineering Enthusiast
+
+GitHub:
+https://github.com/Shlokkushwaha
