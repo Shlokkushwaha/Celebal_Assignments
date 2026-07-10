@@ -2,78 +2,90 @@
 
 ## Enterprise-Grade Incremental Data Ingestion Pipeline using Databricks Auto Loader & Delta Lake
 
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
-![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003B57?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge)
+---
+
+# 📖 Project Overview
+
+Project Sentinel is an enterprise-grade incremental data ingestion pipeline developed using **Databricks Auto Loader**, **PySpark**, and **Delta Lake** following the **Medallion Architecture (Bronze → Silver → Gold)**.
+
+The pipeline automatically detects newly arrived transaction files, ingests only new data using checkpointing, applies data quality checks, transforms raw data into trusted datasets, and generates business-ready analytical insights.
+
+The project demonstrates modern Data Engineering concepts including incremental data ingestion, schema enforcement, schema evolution, late data handling, Delta Lake ACID transactions, monitoring, logging, and SQL-based analytics.
 
 ---
 
-# 📖 Overview
+# 🎯 Project Objectives
 
-Project Sentinel is an enterprise-grade incremental data ingestion pipeline built using **Databricks Auto Loader**, **PySpark**, and **Delta Lake** following the **Bronze–Silver–Gold Medallion Architecture**.
-
-The pipeline automatically detects newly arrived transaction files, ingests only new data using checkpointing, cleans and validates the records, and generates business-ready analytical datasets.
-
-The project demonstrates modern Data Engineering concepts including:
-
-- Incremental Data Ingestion
-- Databricks Auto Loader
-- Delta Lake
-- Schema Enforcement
-- Schema Evolution
-- Late Data Handling
-- Structured Streaming
-- Data Cleaning
-- Deduplication
-- Pipeline Monitoring
-- Pipeline Logging
-- Failure Handling
-- SQL Analytics
+- Build an incremental data ingestion pipeline using Databricks Auto Loader.
+- Implement the Medallion Architecture (Bronze, Silver, Gold).
+- Perform data cleaning, validation, and deduplication.
+- Demonstrate Schema Enforcement and Schema Evolution.
+- Handle late-arriving data efficiently.
+- Generate business-ready analytical datasets.
+- Monitor pipeline execution using logs and monitoring reports.
+- Simulate a production-ready Data Engineering workflow.
 
 ---
 
-# 🏗 Architecture
+# 🏗️ Project Architecture
 
 ![Architecture](architecture/architecture.png)
 
 ---
 
+# ▶️ Notebook Execution Order
+
+Run the notebooks in the following order:
+
+| Step | Notebook | Description |
+|------|----------|-------------|
+| 1 | 01_Data_Generation.ipynb | Generate sample retail transaction dataset |
+| 2 | 02_Bronze_AutoLoader.ipynb | Incremental ingestion using Databricks Auto Loader |
+| 3 | 03_Silver_Layer.ipynb | Data cleaning, validation and deduplication |
+| 4 | 04_Gold_Layer.ipynb | Generate business-ready Gold tables |
+| 5 | 05_SQL_Analytics.ipynb | SQL analysis on Bronze, Silver and Gold tables |
+| 6 | 06_Schema_Evolution_Demo.ipynb | Demonstrate automatic schema evolution |
+| 7 | 07_Monitoring.ipynb | Pipeline monitoring and data quality metrics |
+| 8 | 08_Pipeline_Logs.ipynb | Pipeline execution logging |
+| 9 | 09_Failure_Handling.ipynb | Demonstrate failure handling and rescued data |
+
+---
+
 # 🥉 Bronze Layer
 
-Raw data ingestion using Databricks Auto Loader.
+The Bronze layer ingests raw transaction files using **Databricks Auto Loader**.
 
-Features:
+### Features
 
+- Incremental File Ingestion
 - Auto Loader (cloudFiles)
 - Schema Enforcement
-- Incremental Processing
 - Checkpointing
 - Ingestion Timestamp
-- Delta Table Storage
+- Raw Delta Table Storage
 
 ---
 
 # 🥈 Silver Layer
 
-Data Cleansing & Validation
+The Silver layer transforms raw data into clean and trusted datasets.
 
-Features:
+### Features
 
 - Remove Duplicate Records
 - Handle Null Values
-- Type Casting
-- Standardization
+- Data Type Standardization
+- Data Validation
 - Data Quality Checks
+- Clean Delta Tables
 
 ---
 
 # 🥇 Gold Layer
 
-Business-ready analytics.
+The Gold layer generates business-ready analytical datasets.
 
-Generated KPIs:
+### Generated KPIs
 
 - Top Products
 - Top Customers
@@ -82,18 +94,59 @@ Generated KPIs:
 
 ---
 
-# ⚙ Technologies Used
+# 📊 SQL Analytics
+
+The project includes SQL-based business analysis on Delta tables.
+
+Example analyses include:
+
+- Revenue Analysis
+- Product Performance
+- Customer Analysis
+- Payment Method Distribution
+- Sales Summary
+
+---
+
+# 📈 Monitoring & Logging
+
+The project includes dedicated notebooks for monitoring pipeline execution.
+
+Implemented features:
+
+- Pipeline Monitoring Dashboard
+- Pipeline Execution Logs
+- Data Quality Report
+- Success/Failure Status Tracking
+- Record Count Validation
+
+---
+
+# 🔄 Schema Management
+
+The project demonstrates modern schema management techniques.
+
+### Implemented
+
+- ✅ Schema Enforcement
+- ✅ Schema Evolution
+- ✅ Automatic Detection of New Columns
+- ✅ Late Data Handling
+
+---
+
+# ⚙️ Technologies Used
 
 | Technology | Purpose |
 |------------|----------|
 | Databricks | Development Platform |
 | PySpark | Data Processing |
-| Delta Lake | Storage |
+| Delta Lake | Data Storage |
 | Auto Loader | Incremental Ingestion |
-| Structured Streaming | Streaming |
-| SQL | Analytics |
-| Python | ETL |
-| Git | Version Control |
+| Structured Streaming | Streaming Pipeline |
+| SQL | Business Analytics |
+| Python | ETL Development |
+| Git & GitHub | Version Control |
 
 ---
 
@@ -113,60 +166,74 @@ Main_Project_CEI/
 │   ├── 08_Pipeline_Logs.ipynb
 │   └── 09_Failure_Handling.ipynb
 │
-├── sample_data/
-├── screenshots/
 ├── architecture/
 │   └── architecture.png
 │
+├── sample_data/
+│
+├── screenshots/
+│
 ├── README.md
-├── LICENSE
-└── .gitignore
+
 ```
 
 ---
 
-# ✨ Key Features
+# 📁 Sample Data
 
-- Incremental Data Ingestion
-- Databricks Auto Loader
-- Delta Lake
-- Medallion Architecture
-- Schema Enforcement
+The `sample_data` folder contains datasets used for demonstrating:
+
+- Incremental Ingestion
 - Schema Evolution
 - Late Data Handling
-- ACID Transactions
-- Monitoring
-- Pipeline Logging
-- Failure Handling
-- SQL Analytics
-
----
-
-# 📊 SQL Analytics
-
-The Gold layer generates business-ready datasets including:
-
-- Revenue Analysis
-- Top Customers
-- Top Products
-- Payment Distribution
+- Data Quality Testing
 
 ---
 
 # 📷 Screenshots
 
-Screenshots demonstrating each stage of the pipeline are available inside the **screenshots/** folder.
+The project contains screenshots demonstrating:
+
+- Bronze Layer
+- Silver Layer
+- Gold Layer
+- SQL Analytics
+- Monitoring Dashboard
+- Pipeline Logs
+- Failure Handling
+
+> Screenshots are available in the `screenshots/` folder.
+
+---
+
+# ✨ Key Features
+
+- ✅ Incremental Data Ingestion
+- ✅ Databricks Auto Loader
+- ✅ Medallion Architecture
+- ✅ Delta Lake
+- ✅ Schema Enforcement
+- ✅ Schema Evolution
+- ✅ Late Data Handling
+- ✅ Structured Streaming
+- ✅ SQL Analytics
+- ✅ Monitoring
+- ✅ Pipeline Logging
+- ✅ Failure Handling
+- ✅ ACID Transactions
 
 ---
 
 # 🚀 Future Improvements
 
-- Azure Data Factory Integration
-- Azure Data Lake Storage Gen2
-- Unity Catalog
+Potential enhancements include:
+
+- Azure Data Factory Orchestration
+- Azure Data Lake Storage Gen2 Integration
+- Unity Catalog Integration
 - Power BI Dashboard
-- CI/CD Pipeline
-- Delta Live Tables
+- CI/CD using GitHub Actions
+- Delta Live Tables (DLT)
 
 ---
 
@@ -178,5 +245,8 @@ B.Tech Computer Science Engineering
 
 Data Engineering Enthusiast
 
-GitHub:
-https://github.com/Shlokkushwaha
+GitHub: https://github.com/Shlokkushwaha
+
+---
+
+## ⭐ If you found this project useful, consider giving it a star on GitHub!
