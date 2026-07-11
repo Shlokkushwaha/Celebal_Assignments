@@ -2,32 +2,58 @@
 
 ## Enterprise-Grade Incremental Data Ingestion Pipeline using Databricks Auto Loader & Delta Lake
 
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
+![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003B57?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge)
+
 ---
 
-# 📖 Project Overview
+# 📖 Overview
 
-Project Sentinel is an enterprise-grade incremental data ingestion pipeline developed using **Databricks Auto Loader**, **PySpark**, and **Delta Lake** following the **Medallion Architecture (Bronze → Silver → Gold)**.
+Project Sentinel is an enterprise-grade incremental data ingestion pipeline built using **Databricks Auto Loader**, **PySpark**, and **Delta Lake** following the **Bronze–Silver–Gold Medallion Architecture**.
 
-The pipeline automatically detects newly arrived transaction files, ingests only new data using checkpointing, applies data quality checks, transforms raw data into trusted datasets, and generates business-ready analytical insights.
+The pipeline automatically detects newly arrived transaction files, ingests only new data using checkpointing, transforms raw data into clean and trusted datasets, and generates business-ready analytical insights.
 
-The project demonstrates modern Data Engineering concepts including incremental data ingestion, schema enforcement, schema evolution, late data handling, Delta Lake ACID transactions, monitoring, logging, and SQL-based analytics.
+The project demonstrates several production-oriented Data Engineering concepts including:
+
+- Incremental Data Ingestion
+- Databricks Auto Loader
+- Delta Lake
+- Medallion Architecture
+- Schema Enforcement
+- Schema Evolution
+- Late Data Handling
+- Structured Streaming
+- Data Validation
+- Deduplication
+- Pipeline Monitoring
+- Pipeline Logging
+- Failure Handling
+- Rule-based Anomaly Detection
+- Automated Email Notifications
+- SQL Analytics
 
 ---
 
 # 🎯 Project Objectives
 
-- Build an incremental data ingestion pipeline using Databricks Auto Loader.
-- Implement the Medallion Architecture (Bronze, Silver, Gold).
-- Perform data cleaning, validation, and deduplication.
+- Build an incremental data ingestion pipeline.
+- Implement the Bronze–Silver–Gold Medallion Architecture.
 - Demonstrate Schema Enforcement and Schema Evolution.
-- Handle late-arriving data efficiently.
-- Generate business-ready analytical datasets.
-- Monitor pipeline execution using logs and monitoring reports.
+- Handle late-arriving data.
+- Clean, validate and deduplicate transactional data.
+- Generate business-ready Gold layer datasets.
+- Monitor pipeline execution.
+- Maintain execution logs.
+- Detect anomalous transactions.
+- Automatically notify users after pipeline execution.
 - Simulate a production-ready Data Engineering workflow.
 
 ---
 
-# 🏗️ Project Architecture
+# 🏗 Architecture
 
 ![Architecture](architecture/architecture.png)
 
@@ -35,57 +61,55 @@ The project demonstrates modern Data Engineering concepts including incremental 
 
 # ▶️ Notebook Execution Order
 
-Run the notebooks in the following order:
-
 | Step | Notebook | Description |
 |------|----------|-------------|
-| 1 | 01_Data_Generation.ipynb | Generate sample retail transaction dataset |
-| 2 | 02_Bronze_AutoLoader.ipynb | Incremental ingestion using Databricks Auto Loader |
-| 3 | 03_Silver_Layer.ipynb | Data cleaning, validation and deduplication |
-| 4 | 04_Gold_Layer.ipynb | Generate business-ready Gold tables |
-| 5 | 05_SQL_Analytics.ipynb | SQL analysis on Bronze, Silver and Gold tables |
-| 6 | 06_Schema_Evolution_Demo.ipynb | Demonstrate automatic schema evolution |
-| 7 | 07_Monitoring.ipynb | Pipeline monitoring and data quality metrics |
-| 8 | 08_Pipeline_Logs.ipynb | Pipeline execution logging |
-| 9 | 09_Failure_Handling.ipynb | Demonstrate failure handling and rescued data |
+| 01 | Data_Generation | Generate sample retail transaction dataset |
+| 02 | Bronze_AutoLoader | Incremental ingestion using Databricks Auto Loader |
+| 03 | Silver_Layer | Data cleaning, validation and deduplication |
+| 04 | Gold_Layer | Business-ready analytics |
+| 05 | SQL_Analytics | SQL queries on Bronze, Silver and Gold |
+| 06 | Schema_Evolution_Demo | Demonstrate schema evolution |
+| 07 | Monitoring | Data quality monitoring |
+| 08 | Pipeline_Logs | Pipeline execution logging |
+| 09 | Failure_Handling | Failure handling demonstration |
+| 10 | Alerting_System | Anomaly detection & Email Notifications |
 
 ---
 
 # 🥉 Bronze Layer
 
-The Bronze layer ingests raw transaction files using **Databricks Auto Loader**.
+Raw ingestion layer.
 
-### Features
+Features:
 
-- Incremental File Ingestion
-- Auto Loader (cloudFiles)
-- Schema Enforcement
+- Databricks Auto Loader
+- Incremental File Processing
 - Checkpointing
+- Schema Enforcement
 - Ingestion Timestamp
-- Raw Delta Table Storage
+- Delta Lake Storage
 
 ---
 
 # 🥈 Silver Layer
 
-The Silver layer transforms raw data into clean and trusted datasets.
+Data cleansing layer.
 
-### Features
+Features:
 
+- Remove Null Records
 - Remove Duplicate Records
-- Handle Null Values
-- Data Type Standardization
 - Data Validation
-- Data Quality Checks
-- Clean Delta Tables
+- Data Standardization
+- Clean Delta Table
 
 ---
 
 # 🥇 Gold Layer
 
-The Gold layer generates business-ready analytical datasets.
+Business-ready datasets.
 
-### Generated KPIs
+Generated KPIs include:
 
 - Top Products
 - Top Customers
@@ -94,59 +118,77 @@ The Gold layer generates business-ready analytical datasets.
 
 ---
 
-# 📊 SQL Analytics
+# 🚨 Anomaly Detection
 
-The project includes SQL-based business analysis on Delta tables.
+The pipeline performs rule-based anomaly detection to identify potential data quality issues.
 
-Example analyses include:
+Examples include:
 
-- Revenue Analysis
-- Product Performance
-- Customer Analysis
-- Payment Method Distribution
-- Sales Summary
+- Missing critical values
+- Invalid quantities
+- Invalid prices
+- Suspicious transactions
+
+Detected anomalies are included in monitoring reports and execution notifications.
 
 ---
 
 # 📈 Monitoring & Logging
 
-The project includes dedicated notebooks for monitoring pipeline execution.
+The project continuously monitors pipeline execution.
 
 Implemented features:
 
-- Pipeline Monitoring Dashboard
-- Pipeline Execution Logs
+- Pipeline Monitoring
 - Data Quality Report
-- Success/Failure Status Tracking
-- Record Count Validation
+- Execution Status
+- Record Counts
+- Execution Timestamp
+- Pipeline Logs
+- Failure Handling
 
 ---
 
-# 🔄 Schema Management
+# 📧 Automated Email Notifications
 
-The project demonstrates modern schema management techniques.
+The pipeline automatically sends an email report after execution.
 
-### Implemented
+Each email contains:
 
-- ✅ Schema Enforcement
-- ✅ Schema Evolution
-- ✅ Automatic Detection of New Columns
-- ✅ Late Data Handling
+- Pipeline Status
+- Pipeline Summary
+- Total Records
+- Good Records
+- Anomaly Count
+- Execution Timestamp
+
+Emails are sent using Gmail SMTP with App Password authentication.
 
 ---
 
-# ⚙️ Technologies Used
+# 📊 SQL Analytics
+
+The Gold layer supports SQL analytics including:
+
+- Revenue Analysis
+- Top Customers
+- Top Products
+- Payment Distribution
+
+---
+
+# ⚙ Technologies Used
 
 | Technology | Purpose |
 |------------|----------|
 | Databricks | Development Platform |
 | PySpark | Data Processing |
-| Delta Lake | Data Storage |
-| Auto Loader | Incremental Ingestion |
-| Structured Streaming | Streaming Pipeline |
-| SQL | Business Analytics |
-| Python | ETL Development |
-| Git & GitHub | Version Control |
+| Delta Lake | Storage |
+| Databricks Auto Loader | Incremental Ingestion |
+| Structured Streaming | Streaming |
+| SQL | Analytics |
+| Python | ETL |
+| Git | Version Control |
 
 ---
 
@@ -164,45 +206,45 @@ Main_Project_CEI/
 │   ├── 06_Schema_Evolution_Demo.ipynb
 │   ├── 07_Monitoring.ipynb
 │   ├── 08_Pipeline_Logs.ipynb
-│   └── 09_Failure_Handling.ipynb
+│   ├── 09_Failure_Handling.ipynb
+│   └── 10_Alerting_System.ipynb
 │
 ├── architecture/
 │   └── architecture.png
 │
 ├── sample_data/
-│
 ├── screenshots/
-│
 ├── README.md
-
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-# 📁 Sample Data
+# ⚙ Configuration
 
-The `sample_data` folder contains datasets used for demonstrating:
+Before running the Alerting System notebook configure:
 
-- Incremental Ingestion
-- Schema Evolution
-- Late Data Handling
-- Data Quality Testing
+- Gmail Sender Email
+- Gmail App Password
+- Receiver Email Address
+
+> Never upload your real credentials to GitHub.
 
 ---
 
 # 📷 Screenshots
 
-The project contains screenshots demonstrating:
+The **screenshots/** folder contains outputs from:
 
 - Bronze Layer
 - Silver Layer
 - Gold Layer
 - SQL Analytics
-- Monitoring Dashboard
+- Monitoring
 - Pipeline Logs
+- Email Notifications
 - Failure Handling
-
-> Screenshots are available in the `screenshots/` folder.
 
 ---
 
@@ -210,30 +252,34 @@ The project contains screenshots demonstrating:
 
 - ✅ Incremental Data Ingestion
 - ✅ Databricks Auto Loader
-- ✅ Medallion Architecture
 - ✅ Delta Lake
+- ✅ Medallion Architecture
 - ✅ Schema Enforcement
 - ✅ Schema Evolution
 - ✅ Late Data Handling
 - ✅ Structured Streaming
+- ✅ Data Cleaning
+- ✅ Deduplication
 - ✅ SQL Analytics
-- ✅ Monitoring
+- ✅ Pipeline Monitoring
 - ✅ Pipeline Logging
 - ✅ Failure Handling
+- ✅ Rule-based Anomaly Detection
+- ✅ Automated Email Notifications
 - ✅ ACID Transactions
 
 ---
 
 # 🚀 Future Improvements
 
-Potential enhancements include:
-
+- Microsoft Teams Notifications
 - Azure Data Factory Orchestration
-- Azure Data Lake Storage Gen2 Integration
-- Unity Catalog Integration
+- Azure Data Lake Storage Gen2
+- Unity Catalog
 - Power BI Dashboard
 - CI/CD using GitHub Actions
-- Delta Live Tables (DLT)
+- Delta Live Tables
+- Azure Monitor Integration
 
 ---
 
@@ -245,8 +291,5 @@ B.Tech Computer Science Engineering
 
 Data Engineering Enthusiast
 
-GitHub: https://github.com/Shlokkushwaha
-
----
-
-## ⭐ If you found this project useful, consider giving it a star on GitHub!
+GitHub:
+https://github.com/Shlokkushwaha
