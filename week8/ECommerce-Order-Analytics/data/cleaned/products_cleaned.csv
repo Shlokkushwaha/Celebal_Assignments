@@ -1,0 +1,301 @@
+product_id,product_name,category,subcategory,cost_price
+P0001,Bookshelf,Home,Storage,81789
+P0002,Dell Inspiron,Electronics,Laptop,44544
+P0003,World History,Books,History,52710
+P0004,Samsung Galaxy S24,Electronics,Mobile,43752
+P0005,Bookshelf,Home,Storage,67668
+P0006,Cargo Jeans,Clothing,Jeans,51605
+P0007,Apj Abdul Kalam,Books,Biography,66909
+P0008,Bookshelf,Home,Storage,2280
+P0009,Physics Basics,Books,Science,76607
+P0010,System Design,Books,Programming,86029
+P0011,Linen Shirt,Clothing,Shirt,68812
+P0012,Office Chair,Home,Furniture,14504
+P0013,Casual Shirt,Clothing,Shirt,19948
+P0014,Study Table,Home,Furniture,80247
+P0015,Mixer Grinder,Home,Kitchen,73616
+P0016,Harry Potter,Books,Novel,22799
+P0017,Bookshelf,Home,Storage,88687
+P0018,Apj Abdul Kalam,Books,Biography,32411
+P0019,Apj Abdul Kalam,Books,Biography,39108
+P0020,Indian History,Books,History,45818
+P0021,Physics Basics,Books,Science,71297
+P0022,Ceiling Light,Home,Lighting,19298
+P0023,Clean Code,Books,Programming,10458
+P0024,Harry Potter,Books,Novel,28147
+P0025,Bomber Jacket,Clothing,Jacket,91348
+P0026,World History,Books,History,77017
+P0027,Graphic Tee,Clothing,T-Shirt,69704
+P0028,Graphic Tee,Clothing,T-Shirt,43392
+P0029,Mixer Grinder,Home,Kitchen,20801
+P0030,Ceiling Light,Home,Lighting,99178
+P0031,Astronomy,Books,Science,11825
+P0032,Winter Jacket,Clothing,Jacket,4988
+P0033,Nike Air Max,Clothing,Shoes,4863
+P0034,Led Lamp,Home,Lighting,38041
+P0035,Oneplus 13,Electronics,Mobile,14164
+P0036,Astronomy,Books,Science,71311
+P0037,Study Table,Home,Furniture,14864
+P0038,Indian History,Books,History,94288
+P0039,Linen Shirt,Clothing,Shirt,38769
+P0040,Round Neck Tee,Clothing,T-Shirt,53248
+P0041,Bookshelf,Home,Storage,87820
+P0042,Hp Pavilion,Electronics,Laptop,32612
+P0043,Lenovo Tab,Electronics,Tablet,98896
+P0044,Astronomy,Books,Science,75188
+P0045,Oneplus Pad,Electronics,Tablet,8242
+P0046,Nikon D750,Electronics,Camera,90025
+P0047,System Design,Books,Programming,38771
+P0048,Steve Jobs,Books,Biography,17607
+P0049,Study Table,Home,Furniture,79495
+P0050,Harry Potter,Books,Novel,87144
+P0051,Round Neck Tee,Clothing,T-Shirt,10830
+P0052,Bookshelf,Home,Storage,74046
+P0053,Xiaomi 15,Electronics,Mobile,26597
+P0054,Polo T-Shirt,Clothing,T-Shirt,58012
+P0055,Asus Vivobook,Electronics,Laptop,66995
+P0056,Pressure Cooker,Home,Kitchen,54550
+P0057,Plastic Box,Home,Storage,88281
+P0058,Clean Code,Books,Programming,495
+P0059,Leather Jacket,Clothing,Jacket,91900
+P0060,Sony Wh1000Xm5,Electronics,Headphones,9146
+P0061,Pressure Cooker,Home,Kitchen,17850
+P0062,Flower Vase,Home,Decor,49579
+P0063,Mixer Grinder,Home,Kitchen,45682
+P0064,Asus Vivobook,Electronics,Laptop,16791
+P0065,Formal Shirt,Clothing,Shirt,60786
+P0066,Bookshelf,Home,Storage,32541
+P0067,Wall Clock,Home,Decor,95130
+P0068,Google Pixel 9,Electronics,Mobile,2150
+P0069,Graphic Tee,Clothing,T-Shirt,4500
+P0070,Plastic Box,Home,Storage,5898
+P0071,Led Lamp,Home,Lighting,98978
+P0072,Asus Vivobook,Electronics,Laptop,30792
+P0073,Apj Abdul Kalam,Books,Biography,18877
+P0074,Adidas Run,Clothing,Shoes,73070
+P0075,Puma Sneakers,Clothing,Shoes,45243
+P0076,Bookshelf,Home,Storage,53611
+P0077,Regular Jeans,Clothing,Jeans,70607
+P0078,Office Chair,Home,Furniture,92843
+P0079,Nike Air Max,Clothing,Shoes,54692
+P0080,Nike Air Max,Clothing,Shoes,43388
+P0081,Nikon D750,Electronics,Camera,95072
+P0082,Casual Shirt,Clothing,Shirt,79394
+P0083,Iphone 16,Electronics,Mobile,77115
+P0084,Nike Air Max,Clothing,Shoes,43742
+P0085,Python Crash Course,Books,Programming,97286
+P0086,Sony Alpha,Electronics,Camera,92344
+P0087,Nike Air Max,Clothing,Shoes,37201
+P0088,Ceiling Light,Home,Lighting,47239
+P0089,Led Lamp,Home,Lighting,94788
+P0090,Wall Clock,Home,Decor,54354
+P0091,Airpods Pro,Electronics,Headphones,2225
+P0092,Apj Abdul Kalam,Books,Biography,25815
+P0093,Indian History,Books,History,32308
+P0094,Bookshelf,Home,Storage,64144
+P0095,Led Lamp,Home,Lighting,46260
+P0096,Round Neck Tee,Clothing,T-Shirt,24223
+P0097,Sony Wh1000Xm5,Electronics,Headphones,9842
+P0098,Google Pixel 9,Electronics,Mobile,82767
+P0099,Linen Shirt,Clothing,Shirt,28768
+P0100,Wall Clock,Home,Decor,87492
+P0101,Led Lamp,Home,Lighting,54014
+P0102,Xiaomi 15,Electronics,Mobile,70320
+P0103,System Design,Books,Programming,88446
+P0104,Office Chair,Home,Furniture,68832
+P0105,Graphic Tee,Clothing,T-Shirt,33184
+P0106,Astronomy,Books,Science,53318
+P0107,Plastic Box,Home,Storage,29703
+P0108,System Design,Books,Programming,85282
+P0109,Google Pixel 9,Electronics,Mobile,72543
+P0110,Mixer Grinder,Home,Kitchen,10937
+P0111,Ceiling Light,Home,Lighting,12599
+P0112,Hp Pavilion,Electronics,Laptop,90839
+P0113,Wall Clock,Home,Decor,89809
+P0114,Steve Jobs,Books,Biography,41320
+P0115,Asus Vivobook,Electronics,Laptop,93516
+P0116,Pressure Cooker,Home,Kitchen,31619
+P0117,Bookshelf,Home,Storage,97059
+P0118,Linen Shirt,Clothing,Shirt,45432
+P0119,Google Pixel 9,Electronics,Mobile,10063
+P0120,Apj Abdul Kalam,Books,Biography,42878
+P0121,Lenovo Tab,Electronics,Tablet,46736
+P0122,Led Lamp,Home,Lighting,86695
+P0123,Pressure Cooker,Home,Kitchen,93568
+P0124,Oneplus 13,Electronics,Mobile,93380
+P0125,Adidas Run,Clothing,Shoes,12095
+P0126,Lenovo Tab,Electronics,Tablet,35458
+P0127,Dell Inspiron,Electronics,Laptop,58930
+P0128,Mixer Grinder,Home,Kitchen,72742
+P0129,Boat Rockerz,Electronics,Headphones,1717
+P0130,Harry Potter,Books,Novel,95106
+P0131,Winter Jacket,Clothing,Jacket,50003
+P0132,Polo T-Shirt,Clothing,T-Shirt,64734
+P0133,Formal Shirt,Clothing,Shirt,55294
+P0134,The Alchemist,Books,Novel,32421
+P0135,Plastic Box,Home,Storage,17858
+P0136,Clean Code,Books,Programming,81389
+P0137,Flower Vase,Home,Decor,85432
+P0138,Regular Jeans,Clothing,Jeans,91233
+P0139,Adidas Run,Clothing,Shoes,52298
+P0140,Astronomy,Books,Science,31875
+P0141,Harry Potter,Books,Novel,51602
+P0142,System Design,Books,Programming,71616
+P0143,Leather Jacket,Clothing,Jacket,60605
+P0144,Adidas Run,Clothing,Shoes,9164
+P0145,Led Lamp,Home,Lighting,31822
+P0146,Indian History,Books,History,9794
+P0147,Bookshelf,Home,Storage,70140
+P0148,Plastic Box,Home,Storage,47224
+P0149,Iphone 16,Electronics,Mobile,46631
+P0150,Leather Jacket,Clothing,Jacket,84645
+P0151,Flower Vase,Home,Decor,13024
+P0152,World History,Books,History,51366
+P0153,Plastic Box,Home,Storage,3319
+P0154,Pressure Cooker,Home,Kitchen,11353
+P0155,Macbook Air M3,Electronics,Laptop,59781
+P0156,Bomber Jacket,Clothing,Jacket,12895
+P0157,Ceiling Light,Home,Lighting,5956
+P0158,Oneplus 13,Electronics,Mobile,88854
+P0159,Round Neck Tee,Clothing,T-Shirt,21089
+P0160,Apj Abdul Kalam,Books,Biography,30489
+P0161,Office Chair,Home,Furniture,56740
+P0162,Mixer Grinder,Home,Kitchen,56402
+P0163,Mixer Grinder,Home,Kitchen,98708
+P0164,Sony Wh1000Xm5,Electronics,Headphones,70471
+P0165,Regular Jeans,Clothing,Jeans,15036
+P0166,Harry Potter,Books,Novel,80225
+P0167,Plastic Box,Home,Storage,60112
+P0168,Cargo Jeans,Clothing,Jeans,88194
+P0169,Slim Fit Jeans,Clothing,Jeans,15428
+P0170,Cargo Jeans,Clothing,Jeans,51016
+P0171,Plastic Box,Home,Storage,55548
+P0172,Puma Sneakers,Clothing,Shoes,84675
+P0173,Leather Jacket,Clothing,Jacket,18488
+P0174,Regular Jeans,Clothing,Jeans,47159
+P0175,Sony Alpha,Electronics,Camera,50424
+P0176,Ceiling Light,Home,Lighting,58276
+P0177,Office Chair,Home,Furniture,99853
+P0178,Slim Fit Jeans,Clothing,Jeans,70565
+P0179,Indian History,Books,History,65021
+P0180,Sony Wh1000Xm5,Electronics,Headphones,71286
+P0181,Steve Jobs,Books,Biography,57950
+P0182,Nike Air Max,Clothing,Shoes,85778
+P0183,Slim Fit Jeans,Clothing,Jeans,45788
+P0184,Canon Eos,Electronics,Camera,31156
+P0185,Winter Jacket,Clothing,Jacket,93259
+P0186,Office Chair,Home,Furniture,27224
+P0187,Boat Rockerz,Electronics,Headphones,78331
+P0188,Cargo Jeans,Clothing,Jeans,75169
+P0189,Steve Jobs,Books,Biography,98416
+P0190,Pressure Cooker,Home,Kitchen,16731
+P0191,Graphic Tee,Clothing,T-Shirt,32547
+P0192,Led Lamp,Home,Lighting,35321
+P0193,Ceiling Light,Home,Lighting,12302
+P0194,Bookshelf,Home,Storage,48474
+P0195,Ceiling Light,Home,Lighting,96139
+P0196,Nikon D750,Electronics,Camera,70148
+P0197,Study Table,Home,Furniture,64943
+P0198,Astronomy,Books,Science,75850
+P0199,Bomber Jacket,Clothing,Jacket,89563
+P0200,Samsung Galaxy S24,Electronics,Mobile,60338
+P0201,Iphone 16,Electronics,Mobile,188
+P0202,Office Chair,Home,Furniture,39666
+P0203,Slim Fit Jeans,Clothing,Jeans,32919
+P0204,Samsung Tab S10,Electronics,Tablet,82099
+P0205,Indian History,Books,History,92335
+P0206,Iphone 16,Electronics,Mobile,17493
+P0207,Winter Jacket,Clothing,Jacket,1156
+P0208,Clean Code,Books,Programming,62713
+P0209,Lenovo Thinkpad,Electronics,Laptop,13525
+P0210,Oneplus Pad,Electronics,Tablet,18073
+P0211,Office Chair,Home,Furniture,73931
+P0212,Airpods Pro,Electronics,Headphones,94790
+P0213,Polo T-Shirt,Clothing,T-Shirt,58084
+P0214,Formal Shirt,Clothing,Shirt,16242
+P0215,Flower Vase,Home,Decor,18427
+P0216,Cargo Jeans,Clothing,Jeans,72634
+P0217,System Design,Books,Programming,27028
+P0218,Adidas Run,Clothing,Shoes,31470
+P0219,Led Lamp,Home,Lighting,83734
+P0220,Sony Wh1000Xm5,Electronics,Headphones,41580
+P0221,Puma Sneakers,Clothing,Shoes,71712
+P0222,Nike Air Max,Clothing,Shoes,1907
+P0223,World History,Books,History,52263
+P0224,Apj Abdul Kalam,Books,Biography,52827
+P0225,Airpods Pro,Electronics,Headphones,40720
+P0226,Airpods Pro,Electronics,Headphones,20465
+P0227,The Alchemist,Books,Novel,57442
+P0228,Formal Shirt,Clothing,Shirt,57048
+P0229,Canon Eos,Electronics,Camera,97315
+P0230,Formal Shirt,Clothing,Shirt,92046
+P0231,Lenovo Thinkpad,Electronics,Laptop,68651
+P0232,Indian History,Books,History,35327
+P0233,Oneplus 13,Electronics,Mobile,35749
+P0234,Ipad Air,Electronics,Tablet,67049
+P0235,Clean Code,Books,Programming,21973
+P0236,Indian History,Books,History,75323
+P0237,Asus Vivobook,Electronics,Laptop,32153
+P0238,Nikon D750,Electronics,Camera,19771
+P0239,Linen Shirt,Clothing,Shirt,93688
+P0240,Study Table,Home,Furniture,94509
+P0241,Physics Basics,Books,Science,15750
+P0242,Hp Pavilion,Electronics,Laptop,6119
+P0243,Pressure Cooker,Home,Kitchen,40823
+P0244,System Design,Books,Programming,48454
+P0245,Cargo Jeans,Clothing,Jeans,97037
+P0246,Adidas Run,Clothing,Shoes,64765
+P0247,Leather Jacket,Clothing,Jacket,53844
+P0248,Asus Vivobook,Electronics,Laptop,90993
+P0249,Ipad Air,Electronics,Tablet,49419
+P0250,Python Crash Course,Books,Programming,31317
+P0251,Led Lamp,Home,Lighting,18761
+P0252,Python Crash Course,Books,Programming,68225
+P0253,Flower Vase,Home,Decor,11228
+P0254,Airpods Pro,Electronics,Headphones,51788
+P0255,Sony Wh1000Xm5,Electronics,Headphones,17232
+P0256,Regular Jeans,Clothing,Jeans,51605
+P0257,Astronomy,Books,Science,9889
+P0258,Round Neck Tee,Clothing,T-Shirt,13948
+P0259,Adidas Run,Clothing,Shoes,15925
+P0260,Indian History,Books,History,34835
+P0261,Iphone 16,Electronics,Mobile,39974
+P0262,Macbook Air M3,Electronics,Laptop,93312
+P0263,Regular Jeans,Clothing,Jeans,88859
+P0264,Physics Basics,Books,Science,59370
+P0265,Casual Shirt,Clothing,Shirt,18422
+P0266,Samsung Galaxy S24,Electronics,Mobile,29235
+P0267,Polo T-Shirt,Clothing,T-Shirt,82714
+P0268,Boat Rockerz,Electronics,Headphones,9928
+P0269,Iphone 16,Electronics,Mobile,58221
+P0270,Casual Shirt,Clothing,Shirt,60523
+P0271,Asus Vivobook,Electronics,Laptop,95052
+P0272,Led Lamp,Home,Lighting,56023
+P0273,Slim Fit Jeans,Clothing,Jeans,36142
+P0274,The Alchemist,Books,Novel,80968
+P0275,Regular Jeans,Clothing,Jeans,72279
+P0276,Mixer Grinder,Home,Kitchen,18087
+P0277,Office Chair,Home,Furniture,71358
+P0278,Nikon D750,Electronics,Camera,63627
+P0279,Apj Abdul Kalam,Books,Biography,23668
+P0280,Samsung Tab S10,Electronics,Tablet,7779
+P0281,Bookshelf,Home,Storage,30608
+P0282,Formal Shirt,Clothing,Shirt,35034
+P0283,Asus Vivobook,Electronics,Laptop,51011
+P0284,World History,Books,History,41781
+P0285,Steve Jobs,Books,Biography,46195
+P0286,Leather Jacket,Clothing,Jacket,64617
+P0287,Indian History,Books,History,30590
+P0288,Linen Shirt,Clothing,Shirt,43581
+P0289,Polo T-Shirt,Clothing,T-Shirt,42513
+P0290,Iphone 16,Electronics,Mobile,18666
+P0291,Boat Rockerz,Electronics,Headphones,49067
+P0292,Plastic Box,Home,Storage,42384
+P0293,Round Neck Tee,Clothing,T-Shirt,83889
+P0294,Wall Clock,Home,Decor,73759
+P0295,World History,Books,History,96306
+P0296,World History,Books,History,92113
+P0297,Plastic Box,Home,Storage,41809
+P0298,Leather Jacket,Clothing,Jacket,18534
+P0299,Python Crash Course,Books,Programming,41979
+P0300,Linen Shirt,Clothing,Shirt,95688
