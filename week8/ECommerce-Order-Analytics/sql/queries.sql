@@ -438,3 +438,56 @@ ORDER BY order_date
 AS next_order
 
 FROM orders;
+
+
+-- Cohort Analysis query (SQLite)
+
+-- Query 26 - Cohort Analysis
+
+WITH first_purchase AS (
+
+SELECT
+
+customer_id,
+
+MIN(strftime('%Y-%m', order_date)) AS cohort_month
+
+FROM orders
+
+WHERE customer_id IS NOT NULL
+
+GROUP BY customer_id
+
+)
+
+SELECT
+
+cohort_month,
+
+COUNT(customer_id) AS customers
+
+FROM first_purchase
+
+GROUP BY cohort_month
+
+ORDER BY cohort_month;
+
+-- Customer Retention Query
+
+-- Query 27 - Repeat Customers
+
+SELECT
+
+customer_id,
+
+COUNT(order_id) AS total_orders
+
+FROM orders
+
+WHERE customer_id IS NOT NULL
+
+GROUP BY customer_id
+
+HAVING COUNT(order_id) > 1
+
+ORDER BY total_orders DESC;
